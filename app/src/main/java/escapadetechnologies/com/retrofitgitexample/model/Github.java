@@ -16,12 +16,20 @@ public class Github {
     @SerializedName("full_name")
     private String full_name;
 
+    @SerializedName("owner")
+    private GithubOwner owner;
 
-    public Github(String id, String node_id, String name, String full_name) {
+    @SerializedName("description")
+    private String description;
+
+
+    public Github(String id, String node_id, String name, String full_name, GithubOwner owner, String description) {
         this.id = id;
         this.node_id = node_id;
         this.name = name;
         this.full_name = full_name;
+        this.owner = owner;
+        this.description = description;
     }
 
     public String getId() {
@@ -54,5 +62,21 @@ public class Github {
 
     public void setFull_name(String full_name) {
         this.full_name = full_name;
+    }
+
+    public GithubOwner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(GithubOwner owner) {
+        this.owner = owner;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

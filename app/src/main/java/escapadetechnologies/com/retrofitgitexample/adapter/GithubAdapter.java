@@ -34,11 +34,17 @@ public class GithubAdapter extends RecyclerView.Adapter<GithubAdapter.GithubView
     @Override
     public void onBindViewHolder(@NonNull GithubViewHolder githubViewHolder, int i) {
 
+        Github github = githubArrayList.get(i);
+
+
         githubViewHolder.node_id.setText(githubArrayList.get(i).getNode_id());
         githubViewHolder.name.setText(githubArrayList.get(i).getName());
         githubViewHolder.full_name.setText(githubArrayList.get(i).getFull_name());
+        githubViewHolder.description.setText(githubArrayList.get(i).getDescription());
 
-
+        githubViewHolder.login.setText(github.getOwner().getLogin());
+        githubViewHolder.html_url.setText(github.getOwner().getHtml_url());
+        githubViewHolder.avatar_url.setText(github.getOwner().getAvatar_url());
     }
 
     @Override
@@ -48,13 +54,17 @@ public class GithubAdapter extends RecyclerView.Adapter<GithubAdapter.GithubView
 
     public class GithubViewHolder extends RecyclerView.ViewHolder{
 
-        TextView node_id,name,full_name;
+        TextView node_id,name,full_name,login,html_url,avatar_url,description;
 
         public GithubViewHolder(@NonNull View itemView) {
             super(itemView);
             node_id = itemView.findViewById(R.id.node_id);
             name = itemView.findViewById(R.id.name);
             full_name = itemView.findViewById(R.id.full_name);
+            login = itemView.findViewById(R.id.login);
+            html_url = itemView.findViewById(R.id.html_url);
+            avatar_url = itemView.findViewById(R.id.avatar_url);
+            description = itemView.findViewById(R.id.description);
         }
     }
 }
