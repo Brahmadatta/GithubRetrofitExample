@@ -1,4 +1,4 @@
-package escapadetechnologies.com.retrofitgitexample.model;
+package Example.com.retrofitgitexample.model;
 
 import com.google.gson.annotations.SerializedName;
 

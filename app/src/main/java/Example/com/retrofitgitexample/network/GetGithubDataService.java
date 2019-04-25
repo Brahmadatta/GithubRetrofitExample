@@ -1,9 +1,9 @@
-package escapadetechnologies.com.retrofitgitexample.network;
+package Example.com.retrofitgitexample.network;
 
 import java.util.List;
 
-import escapadetechnologies.com.retrofitgitexample.model.Github;
-import escapadetechnologies.com.retrofitgitexample.model.GithubOwnerArrayList;
+import Example.com.retrofitgitexample.model.Github;
+import Example.com.retrofitgitexample.model.GithubOwnerArrayList;
 import retrofit2.Call;
 import retrofit2.http.GET;
 

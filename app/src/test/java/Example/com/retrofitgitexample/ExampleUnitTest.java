@@ -1,4 +1,4 @@
-package escapadetechnologies.com.retrofitgitexample;
+package Example.com.retrofitgitexample;
 
 import org.junit.Test;
 

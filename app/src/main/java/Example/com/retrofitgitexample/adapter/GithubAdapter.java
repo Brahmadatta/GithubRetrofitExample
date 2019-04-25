@@ -1,4 +1,4 @@
-package escapadetechnologies.com.retrofitgitexample.adapter;
+package Example.com.retrofitgitexample.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,11 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.List;
 
-import escapadetechnologies.com.retrofitgitexample.R;
-import escapadetechnologies.com.retrofitgitexample.model.Github;
+import Example.com.retrofitgitexample.R;
+import Example.com.retrofitgitexample.model.Github;
 
 public class GithubAdapter extends RecyclerView.Adapter<GithubAdapter.GithubViewHolder>{
 

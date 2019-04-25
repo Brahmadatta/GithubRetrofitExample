@@ -1,21 +1,20 @@
-package escapadetechnologies.com.retrofitgitexample;
+package Example.com.retrofitgitexample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import escapadetechnologies.com.retrofitgitexample.adapter.GithubAdapter;
-import escapadetechnologies.com.retrofitgitexample.model.Github;
-import escapadetechnologies.com.retrofitgitexample.model.GithubOwner;
-import escapadetechnologies.com.retrofitgitexample.model.GithubOwnerArrayList;
-import escapadetechnologies.com.retrofitgitexample.network.GetGithubDataService;
-import escapadetechnologies.com.retrofitgitexample.network.RetrofitInstance;
+import Example.com.retrofitgitexample.adapter.GithubAdapter;
+import Example.com.retrofitgitexample.model.Github;
+import Example.com.retrofitgitexample.model.GithubOwner;
+import Example.com.retrofitgitexample.model.GithubOwnerArrayList;
+import Example.com.retrofitgitexample.network.GetGithubDataService;
+import Example.com.retrofitgitexample.network.RetrofitInstance;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
